@@ -16,25 +16,25 @@ for sx in inputvalues:
 
 for j in inputs:
     if (len(j) == 1):
-        cycle += 1
-        if cycle in [valuexx-1, valuexx, valuexx+1]:
+        if cycle % 40 in [valuexx-1, valuexx, valuexx+1]:
             crt.append("#")
         else:
             crt.append('.')
+        cycle += 1
 
     else:
         for i in range(2):
-            cycle += 1
-            if cycle % 39 in [valuexx-1, valuexx, valuexx+1]:
+            if cycle % 40 in [valuexx-1, valuexx, valuexx+1]:
                 crt.append("#")
             else:
                 crt.append('.')
+            cycle += 1
         valuexx = valuexx+j[1]
 
     # print(cycle, valuexx)
 
 for i in range(len(crt)):
-    if i in [xxxx*39 for xxxx in range(1, 7)]:
-        print("\n")
+    if i in [xxxx*40 for xxxx in range(1, 7)]:
+        print("\n"+crt[i], end="")
     else:
         print(crt[i], end="")
