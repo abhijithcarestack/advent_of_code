@@ -14,7 +14,4 @@ for i in inputvalues:
         count = count+1
     elif (int(i[2]-1) in range(int(i[0]), int(i[1])+1)) and (int(i[3])) in range(int(i[0]), int(i[1])+1):
         count = count+1
-    # elif (int(i[1]) == int(i[2])) or (int(i[0]) == int(i[3])):
-    #     count = count+1
-
 print(count)
