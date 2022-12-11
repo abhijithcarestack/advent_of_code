@@ -133,14 +133,6 @@ class Monkey7(MonkeyInterface):
         return worry % 7
 
 
-# monkeys = {
-#     0: Monkey0([79, 98], 3, 2),
-#     1: Monkey1([54, 65, 75, 74], 0, 2),
-#     2: Monkey2([79, 60, 97], 3, 1),
-#     3: Monkey3([74], 1, 0)
-
-# }
-
 monkeys = {
     0: Monkey0([99, 67, 92, 61, 83, 64, 98], 2, 4),
     1: Monkey1([78, 74, 88, 89, 50], 5, 3),
